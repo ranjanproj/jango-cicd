@@ -1,6 +1,9 @@
 FROM python:3
 RUN pip install django==3.2
 
+# Set the working directory to /app
+WORKDIR /app
+
 COPY ..
 
 RUN python manage.py migrate
