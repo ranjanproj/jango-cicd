@@ -1,4 +1,8 @@
 FROM python:3
+# Upgrade pip
+RUN python -m pip install --upgrade pip
+
+# Install Django
 RUN pip install django==3.2
 
 # Set the working directory to /app
